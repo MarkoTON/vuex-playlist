@@ -14,6 +14,9 @@
 export default {
   computed: {
     products() {
+      console.log(this.$store)
+      console.log(this.$store.state)
+      console.table(this.$store.state.products)
       return this.$store.state.products;
     },
   },
